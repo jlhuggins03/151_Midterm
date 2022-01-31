@@ -10,6 +10,11 @@ public class MovePlayer : MonoBehaviour {
 
 	public float speed;
 	public Text countText;
+	public GameObject monster;
+	private Transform monsterTrans;
+	private Transform playerTrans;
+	public float distance;
+
 
 	private Rigidbody rb;
 	private int count;
@@ -27,8 +32,10 @@ public class MovePlayer : MonoBehaviour {
 	    OSCHandler.Instance.Init ();
 		OSCHandler.Instance.SendMessageToClient ("pd", "/unity/trigger", "ready");
         OSCHandler.Instance.SendMessageToClient("pd", "/unity/playseq", 1);
-        //*************
+		//*************
 
+		playerTrans = GetComponent<Transform>();
+		monsterTrans = monster.GetComponent<Transform>();
         rb = GetComponent<Rigidbody> ();
 		count = 0;
 		setCountText ();
@@ -39,6 +46,7 @@ public class MovePlayer : MonoBehaviour {
 	{
 		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
+		distance = Vector3.Distance(playerTrans.position, monsterTrans.position);
 
         //Debug.Log(rb.position.x);
 

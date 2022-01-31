@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pick Up
   - Wall
+  - Monster
   layers:
   - Default
   - TransparentFX
