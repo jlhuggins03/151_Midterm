@@ -1,4 +1,4 @@
-#N canvas -14 23 1660 992 10;
+#N canvas 1272 0 1278 1326 10;
 #X text 177 277 creation arguments are OSC address;
 #X text 179 238 set message to change OSC address;
 #X text 164 48 1 Set IP Address : network address;
@@ -65,7 +65,7 @@
 #X connect 23 0 25 0;
 #X connect 24 0 23 0;
 #X restore 47 142 pd oscReceive;
-#X obj 47 36 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+#X obj 47 36 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
 ;
 #X msg 47 61 \; pd dsp \$1;
 #X msg 489 393 2;

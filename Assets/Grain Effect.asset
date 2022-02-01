@@ -18,13 +18,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0
+    value: -40
   intensityX:
     overrideState: 1
-    value: 0
+    value: 1
   intensityY:
     overrideState: 1
-    value: 0
+    value: 1
   centerX:
     overrideState: 1
     value: 0
@@ -61,13 +61,13 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0
+    value: 0.819
   smoothness:
     overrideState: 1
     value: 1
   roundness:
     overrideState: 1
-    value: 1
+    value: 0.932
   rounded:
     overrideState: 0
     value: 0
@@ -115,10 +115,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.254
+    value: 1
   size:
     overrideState: 1
-    value: 1
+    value: 0.88
   lumContrib:
     overrideState: 0
     value: 0.8

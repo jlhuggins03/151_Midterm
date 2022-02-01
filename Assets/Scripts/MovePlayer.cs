@@ -72,6 +72,9 @@ public class MovePlayer : MonoBehaviour {
 			}
 		}
 		//*************
+
+
+		OSCHandler.Instance.SendMessageToClient("pd", "/unity/tempo", distance * 10);
 	}
 		
 
